@@ -1,1 +1,40 @@
-{     "devDependencies": {         "jasmine-spec-reporter": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-jasmine-spec-reporter",     "homepage": "https://github.com/npmtest/node-npmtest-jasmine-spec-reporter",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-jasmine-spec-reporter.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [jasmine-spec-reporter (v4.0.0)](https://github.com/bcaudan/jasmine-spec-reporter)  [![npm package](https://img.shields.io/npm/v/npmtest-jasmine-spec-reporter.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-jasmine-spec-reporter) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-jasmine-spec-reporter.svg)](https://travis-ci.org/npmtest/node-npmtest-jasmine-spec-reporter)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "jasmine-spec-reporter": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-jasmine-spec-reporter",
+    "keywords": [
+        "coverage",
+        "test",
+        "jasmine-spec-reporter"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_jasmine_spec_reporter.js",
+    "name": "npmtest-jasmine-spec-reporter",
+    "nameAlias": "npmtest_jasmine_spec_reporter",
+    "nameOriginal": "npmtest-jasmine-spec-reporter",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-jasmine-spec-reporter.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
