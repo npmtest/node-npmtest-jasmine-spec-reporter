@@ -1,6 +1,6 @@
 # npmtest-jasmine-spec-reporter
 
-#### test coverage for  [jasmine-spec-reporter (v4.0.0)](https://github.com/bcaudan/jasmine-spec-reporter)  [![npm package](https://img.shields.io/npm/v/npmtest-jasmine-spec-reporter.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-jasmine-spec-reporter) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-jasmine-spec-reporter.svg)](https://travis-ci.org/npmtest/node-npmtest-jasmine-spec-reporter)
+#### basic test coverage for  [jasmine-spec-reporter (v4.0.0)](https://github.com/bcaudan/jasmine-spec-reporter)  [![npm package](https://img.shields.io/npm/v/npmtest-jasmine-spec-reporter.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-jasmine-spec-reporter) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-jasmine-spec-reporter.svg)](https://travis-ci.org/npmtest/node-npmtest-jasmine-spec-reporter)
 
 #### Spec reporter for jasmine behavior-driven development framework
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-jasmine-spec-reporter/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-jasmine-spec-reporter/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-jasmine-spec-reporter/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-jasmine-spec-reporter/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-jasmine-spec-reporter/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-jasmine-spec-reporter/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-jasmine-spec-reporter/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-jasmine-spec-reporter/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-jasmine-spec-reporter/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-jasmine-spec-reporter/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-jasmine-spec-reporter/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-jasmine-spec-reporter/build/coverage.html/index.html)
 
@@ -109,7 +109,8 @@
         "test:integration": "npm run pretest && npm run examples:update && jasmine JASMINE_CONFIG_PATH=spec/support/jasmine-integration.json"
     },
     "types": "built/main.d.ts",
-    "version": "4.0.0"
+    "version": "4.0.0",
+    "bin": {}
 }
 ```
 
